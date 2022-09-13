@@ -58,7 +58,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">LEE DO HYEOK</h3>
-                    <h2 class="mb-5">장점들은?</h2>
+                    <h2 class="mb-5">이 사람의 장점은 다음과 같다.</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -106,14 +106,14 @@
                                     <p class="mb-0">JAVA와SQL로 만든 1번째로 만든 미니프로젝트입니다.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
+                            <img class="img-fluid" src="img/portfolio-1.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://vip7137.github.io/portfolio01/Netflix.html">
+                        <a class="portfolio-item" href="https://vip7137.github.io/portfolio01/Netflix.html" target="_blank">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">데모 사이트</div>
+                                    <div class="h2">브랜드형 데모 사이트</div>
                                     <p class="mb-0">HTML5와 CSS로 만든 2번째로 만든<br>넷플릭스의 <설국열차> 데모사이트입니다.</p>
                                 </div>
                             </div>
@@ -124,22 +124,22 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div class="h2">TIS학원 데모사이트</div>
+                                    <p class="mb-0">HTML5, CSS, Bootstrap을 이용한 TIS정보기술교육센터 데모사이트입니다.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                            <img class="img-fluid" src="img/portfolio-3.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div class="h2">제작중</div>
+                                    <p class="mb-0">새로운 프로젝트가 완성되면 업데이트 됩니다.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                            <img class="img-fluid" src="img/portfolio-4.jpg" alt="..." />
                         </a>
                     </div>
                 </div>
@@ -148,17 +148,45 @@
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-                <a class="btn btn-xl btn-light me-4" href="#!">Click Me!</a>
-                <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a>
+                <h2 class="mb-4">이 사람이 공부하는 학원의 사이트가 궁금하신다면?</h2>
+                <a class="btn btn-xl btn-light me-4" href="http://www.tisedu.com/pc/html/index/" target="_blank">Click Me!</a>
+                <!-- <a class="btn btn-xl btn-dark" href="#!">Look at Me!</a> -->
             </div>
         </section>
+
         <!-- Map-->
-        <div class="map" id="contact">
-            <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-            <br />
-            <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
-        </div>
+        <!-- 오시는 길 ------------------------------------------------------------------------------------->
+        <div id="maps" class="container-fluid">
+            <h1 class="text-center" style="padding: 30px;">현재 교육받는 학원의 위치</h1>
+          <div id="map" style="width:100%;height:350px;"></div>
+  
+          <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=07ce8685f0dd6eb0a5ffe2380cef2f01"></script>
+          <script>
+          var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+              mapOption = { 
+                  center: new kakao.maps.LatLng(37.5254901678759, 126.89139422379137), // 지도의 중심좌표
+                  level: 3 // 지도의 확대 레벨
+              };
+  
+          var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+  
+          // 마커가 표시될 위치입니다 
+          var markerPosition  = new kakao.maps.LatLng(37.5254901678759, 126.89139422379137); 
+  
+          // 마커를 생성합니다
+          var marker = new kakao.maps.Marker({
+              position: markerPosition
+          });
+  
+          // 마커가 지도 위에 표시되도록 설정합니다
+          marker.setMap(map);
+  
+          // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+          // marker.setMap(null);    
+          </script>
+          </div>
+          <!-- 오시는 길-->
+
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
