@@ -1,0 +1,79 @@
+/*배경 영상 유튜브로 반복재생*/
+* { box-sizing: border-box; }
+
+    .video-background {
+
+        background: #000;
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -99;
+
+    }
+
+    .video-foreground,
+
+    .video-background iframe {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+
+    .video-foreground { height: 300%; top: -100%; }
+
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+
+    .video-foreground { width: 300%; left: -100%; }
+
+    }
+
+    /*리스트 제거*/
+    ul,ol{list-style-type: none; text-decoration:none;}
+    
+
+    /*로고 이미지 크기*/
+    h1 { position:fixed; top:20px; left:20px; z-index:10;}
+    img{
+        width: 150px;
+        height: 50px;
+        z-index:10;
+    }
+
+    /*메뉴바 만들기*/
+    header { width:400px; height:100%; position:fixed; top:0px; left:-190px; background:linear-gradient(#3f0101, #b30b0b, #4b0303, #fb0505, #630202, #b30b0b, #4b0303); transform:skewX(-10deg); }
+        /*left:-00px는 왼쪽으로 -00px만큼 이동 transform:skewX(-00deg)은 기울기 40도 */
+
+    /* 1depth*/
+    #gnb { 	width:220px; position:absolute; top:150px; right:0px;} /*position:absolute;부모의 위치(header)의 위치에 따라 자식(gnb)도 따라 이동한다*/
+    #gnb>li {position:relative; }
+    #gnb>li>a { display:block; width:200px; height:50px; font:bold 18px/3 play; color:rgb(0, 0, 0); box-sizing:border-box; padding-right:40px; text-align:right;}
+    #gnb>li.on>a { background:#111; color:#fff;}
+    #gnb>li:hover>a { background:#111; color:#fff;}
+    #gnb em { display:inline-block; transform:skewX(10deg)!important; } /*부모(header)를 따라가지않게 !important를 넣은다.*/
+    #gnb em i { margin-right:20px;}
+
+    /* 2depth*/
+    #gnb ul { position:absolute; left:0px; top: 0px; opacity: 0; transition: all 0.4s;}
+    #gnb>li:hover ul { opacity:1; left: 165px;}
+    #gnb ul a { display:block; width:160px; height:40px; background:#222; border-bottom:1px solid #fb0505; font:bold 16px/2.5 arial; color:#fff; box-sizing:border-box; padding-left:20px; margin-bottom:3px; transition:all 0.5s; }
+    #gnb ul a:hover { background:#929292; color:rgb(0, 0, 0); }
+
+    /*sns 버튼 모습*/
+    #sns .fa { font-size:25px; color:#ff0000; opacity:0.5;	transform:scale(1); transition:all 0.5s;}
+    #sns .fa:hover { opacity:1; transform:scale(1.4);}
+    #sns { position: fixed; right: 20px; top: 20px;}
+    #sns li { float: left; padding: 10px;}
+    #sns .fa { color: #ff0000; font-size: 25px; opacity: 0.5; transform: scale(1); transition: all 1.5s;}
+    #sns li:hover .fa{opacity: 1; transform: scale(1.5);}
+
+
+
+
