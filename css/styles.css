@@ -11586,8 +11586,9 @@ footer.footer .social-link:hover {
 
 .video_modal_popup .video-wrapper {
   position: relative;
-  width: 40%;
-  padding-bottom: 25%;
+  top: -30%;
+  left: -18%;
+  transform: translate(10%, 10%);
   z-index: 10
 }
 
