@@ -16,6 +16,9 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- frame을 띄울때 필요한 js-->
+        <script src="//code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -91,6 +94,7 @@
                 <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
             </div>
         </section> -->
+        
         <!-- Portfolio-->
         <section class="content-section" id="portfolio">
             <div class="container px-4 px-lg-5">
@@ -100,22 +104,29 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="https://youtu.be/hX8lyEg3iVk" target="_blank">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">학사관리프로그램</div>
-                                    <p class="mb-0">JAVA와SQL로 만든 학사관리 프로그램입니다.</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="img/JAVA.jpg" alt="..." />
-                        </a>
+                        <div class="popupModalVideo">
+                                <a class="portfolio-item" data-video="hX8lyEg3iVk">
+                                    <div class="caption">
+                                        <div class="caption-content">
+                                            <div class="h2">학사관리프로그램</div>
+                                            <p class="mb-0">JAVA와 오라클(SQL), swing으로 만든<br>학사관리 프로그램입니다.</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="img/JAVA.jpg" alt="..." />
+                                </a>
+                        </div>
+
+                        <div class="video_modal_popup">
+                            <div class="video_modal_popup-closer"></div>
+                        </div>
+
                     </div>
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="https://vip7137.github.io/portfolio01/Netflix.html" target="_blank">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">브랜드형 데모 사이트</div>
-                                    <p class="mb-0">HTML5와 CSS로 만든 <br>넷플릭스의 <설국열차> 데모사이트입니다.</p>
+                                    <p class="mb-0">HTML5와 CSS로 유튜브영상을 배경으로 만든 <br>넷플릭스의 <설국열차> 데모사이트입니다.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="img/Netflix.jpg" alt="..." />
@@ -126,7 +137,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">브랜드형 데모 사이트(2)</div>
-                                    <p class="mb-0">HTML5와 CSS로 만든<br>EA의 <배틀필드2042> 데모사이트입니다.</p>
+                                    <p class="mb-0">HTML5와 CSS로 유튜브영상을 배경으로 만든<br>EA의 <배틀필드2042> 데모사이트입니다.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="img/BattleField.jpg" alt="..." />
@@ -137,7 +148,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">TIS학원 데모사이트</div>
-                                    <p class="mb-0">HTML5, CSS, Bootstrap을 이용한 TIS정보기술교육센터 데모사이트입니다.</p>
+                                    <p class="mb-0">HTML5, CSS, Bootstrap을 이용한<br>반응형 TIS정보기술교육센터 데모사이트입니다.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="img/TIS.EDU.jpg" alt="..." />
@@ -168,6 +179,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white">
             <div class="container px-4 px-lg-5 text-center">
