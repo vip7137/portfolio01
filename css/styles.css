@@ -7356,7 +7356,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-1 {
@@ -7377,6 +7377,10 @@ textarea.form-control-lg {
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+/* 이 사람의 장점은 버튼과의 아래쪽 거리 조절*/
+.mb-51 {
+  margin-bottom: 1rem !important;
 }
 
 .mb-auto {
@@ -11426,6 +11430,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .callout h2, .callout .h2 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -11468,6 +11473,8 @@ footer.footer .social-link:hover {
     height: 75%;
   }
 }
+
+/*메인화면 글자 및 조정*/
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -11476,7 +11483,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(256, 256, 256, 0.5) 0%, rgba(256, 256, 256, 0.5) 100%), url("/img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
