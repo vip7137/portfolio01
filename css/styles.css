@@ -7376,7 +7376,7 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 0.5rem !important;
 }
 /* 이 사람의 장점은 버튼과의 아래쪽 거리 조절*/
 .mb-51 {
@@ -11421,6 +11421,7 @@ html {
 
 .btn-xl {
   padding: 13px 30px;
+  margin-top: 50px;
 }
 
 .callout {
