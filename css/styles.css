@@ -11483,8 +11483,8 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(256, 256, 256, 0.5) 0%, rgba(256, 256, 256, 0.5) 100%), url("img/bg-masthead.jpg");
-  background-position: center center;
+  background: linear-gradient(90deg, rgba(256, 256, 256, 0.5) 0%, rgba(256, 256, 256, 0.5) 100%), url("../img/bg-masthead.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
