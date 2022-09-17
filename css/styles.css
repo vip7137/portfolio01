@@ -11614,3 +11614,18 @@ footer.footer .social-link:hover {
   background: rgba(0, 0, 0, .2);
   z-index: 10
 }
+
+/* 시간 표시하는 부분 */
+figure {
+  top:10px; 
+  left:50%; 
+  font-size:60px; 
+  font-weight:bold; 
+  color:#333; 
+  transition:all 3s;
+}
+
+figure p span { 
+  position:relative; 
+  z-index:5;
+}
