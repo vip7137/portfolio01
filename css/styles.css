@@ -7378,10 +7378,6 @@ textarea.form-control-lg {
 .mb-5 {
   margin-bottom: 0.5rem !important;
 }
-/* 이 사람의 장점은 버튼과의 아래쪽 거리 조절*/
-.mb-51 {
-  margin-bottom: 1rem !important;
-}
 
 .mb-auto {
   margin-bottom: auto !important;

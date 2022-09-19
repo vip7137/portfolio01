@@ -131,3 +131,24 @@ $(document).ready(function(){
 	},1000)  //1초의 시간마다 안쪽의 구문을 반복 실행
   
 });
+// 스크롤 높이 확인
+$(window).on("scroll",function(){
+    var sc_top=$(this).scrollTop();
+
+    $(".top").text(sc_top); // text(값)는 javascript의 'innerText=값' 과 같은 역할
+
+    console.log($(this).scrollTop());
+})
+
+//스크롤 이동
+$(document).ready(function(){
+    $(window).scroll(function(){
+
+        if($(this).scrollTop()>140){
+            $("h2").css({"transition":"2s"}).addClass(" animate__backInUp");
+            $("p").css({"transition":"2s"}).addClass(" animate__fadeInUp");
+            $("p").css({"transition":"2s"}).addClass(" animate__fadeInUp");
+        }
+    
+    });
+});
