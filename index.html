@@ -14,12 +14,13 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css-test/styes-test.css" rel="stylesheet" />
         <!-- frame을 띄울때 필요한 js-->
         <script src="//code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="css/animate.min.css">
 
+        <!-- 스크롤 높이 확인을 위한 코드-->
         <script>
             $(window).on("scroll",function(){
                 var sc_top=$(this).scrollTop();
@@ -32,7 +33,7 @@
 
     </head>
     <body id="page-top">
-
+        
         <!-- Navigation-->
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
@@ -45,53 +46,53 @@
             </ul>
         </nav>
 
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <figure>
-                    <p class="animate__animated animate__fadeInDown">
-                        <!-- 시계 -->
-                        <span>00</span> : <span>00</span> : <span>00</span>		
-
-                    </p>	
-                </figure>
-                <h1 class="animate__animated animate__backInDown">Portfolio</h1>
-                <h3 class="animate__animated animate__bounceInLeft"><em>부족하지만 노력하는 어느 개발자의 이야기입니다.</em></h3>
-                <a class="btn btn-primary btn-xl" href="#about">이야기의 시작</a>
-            </div>
-        </header>
+        <div id="wrap" class="">
+            <!-- Header-->
+            <header class="masthead d-flex align-items-center">
+                <div class="container px-4 px-lg-5 text-center">
+                    <figure>
+                        <p class="animate__animated animate__fadeInDown">
+                            <!-- 시계 -->
+                            <span>00</span> : <span>00</span> : <span>00</span>		
+        
+                        </p>	
+                    </figure>
+                    <h1 class="animate__animated animate__backInDown">Portfolio</h1>
+                    <h3 class="animate__animated animate__fadeIn"><em>부족하지만 노력하는 어느 개발자의 이야기입니다.</em></h3>
+                    <a class="btn btn-primary btn-xl" href="#about">이야기의 시작</a>
+                </div>
+            </header>
+        </div>
 
         <!-- About-->
-        <section class="content-section bg-light">
-            <!-- 높이 조절을 위한 임시적인 div 삽입-->
-            <div id="about" style="padding-top: 100px;">
-
-                <div class="container px-4 px-lg-5 text-center">
-                    <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-10">
-                            <h2 class="animate__animated">LEE DO HYEOK</h2>
-                            <p class="animate__animated">
-                                Michuhol-gu, Incheon, Republic of Korea,<br>
-                                TEL : (010)2960-2200,<br>
-                                E-mail : vip71377@naver.com
-                            </p>
-                            <!-- <a class="btn btn-dark btn-xl" href="#services">이 사람의 장점은?</a> -->
-                        </div>
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 class="animate__animated">LEE DO HYEOK</h2>
+                        <p class="animate__animated">
+                            Michuhol-gu, Incheon, Republic of Korea,<br>
+                            TEL : (010)2960-2200,<br>
+                            E-mail : vip71377@naver.com
+                        </p>
+                        <!-- <a class="btn btn-dark btn-xl" href="#services">이 사람의 장점은?</a> -->
                     </div>
                 </div>
-            
             </div>
         </section>
 
         <!-- Callout-->
         <!-- <section class="callout">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
-                    Welcome to
-                    <em>your</em>
-                    next website!
-                </h2>
-                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>
+                <h2 class="mx-auto mb-5">지금 현재 시간은?</h2> -->
+                    	<!-- 모바일 프레임 -->
+                        <!-- <figure>		
+                            <p> -->
+                                <!-- 시계 -->
+                                <!-- <span>00</span> : <span>00</span> : <span>00</span>		
+
+                            </p>		
+                        </figure>
             </div>
         </section> -->
 
@@ -99,26 +100,24 @@
         <section class="content-section bg-primary text-white text-center" id="services">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
-                    
-                        <h3 class="text-secondary mb-0">LEE DO HYEOK</h3>
-                        <h2 class="mb-5">이 사람의 장점은 다음과 같다.</h2>
-
+                    <h3 class="text-secondary mb-0">LEE DO HYEOK</h3>
+                    <h2 class="mb-5">이 사람의 장점은 다음과 같다.</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                            <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-hiking"></i></span>
-                            <h4><strong>끈기있는 사람</strong></h4>
-                            <p class="text-faded mb-0">남들보다 느리더라도<br>한번 잡은 일은 힘들다는 이유로 놓지 않습니다.</p>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-hiking"></i></span>
+                        <h4><strong>끈기있는 사람</strong></h4>
+                        <p class="text-faded mb-0">남들보다 느리더라도<br>한번 잡은 일은 힘들다는 이유로 놓지 않습니다.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-                            <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-battery-full"></i></span>
-                            <h4><strong>오랫동안 일합니다.</strong></h4>
-                            <p class="text-faded mb-0">한번 자리에 앉으면<br>거의 자리에 앉아 일을 합니다.</p>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-battery-full"></i></span>
+                        <h4><strong>오랫동안 일합니다.</strong></h4>
+                        <p class="text-faded mb-0">한번 자리에 앉으면<br>거의 자리에 앉아 일을 합니다.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
-                            <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-hourglass-half"></i></span>
-                            <h4><strong>노력하는 사람</strong></h4>
-                            <p class="text-faded mb-0">시간이 얼마나 걸리더라도<br>포기하지않고 노력합니다.</p>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-hourglass-half"></i></span>
+                        <h4><strong>노력하는 사람</strong></h4>
+                        <p class="text-faded mb-0">시간이 얼마나 걸리더라도<br>포기하지않고 노력합니다.</p>
                     </div>
                 </div>
                 <a class="btn btn-dark btn-xl" href="#portfolio" style="margin: 10px;">이 사람이 만든 작품들은?</a>
@@ -274,6 +273,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js-test/scripts-test.js"></script>
     </body>
 </html>

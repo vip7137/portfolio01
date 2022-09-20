@@ -7376,8 +7376,9 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 50px !important;
 }
+/* 이 사람의 장점은 버튼과의 아래쪽 거리 조절*/
 
 .mb-auto {
   margin-bottom: auto !important;
@@ -11298,7 +11299,8 @@ html {
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 28px;
 }
 .content-section-heading h3, .content-section-heading .h3 {
   font-size: 1rem;
@@ -11422,7 +11424,6 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11472,6 +11473,11 @@ footer.footer .social-link:hover {
 }
 
 /*메인화면 글자 및 조정*/
+#wrap.morning { color: black; background-image:url(../img/bg_morning.jpg);}
+#wrap.afternoon { color: black; background-image:url(../img/bg_afternoon.jpg);}
+#wrap.evening { color: white; background-image:url(../img/bg_evening.jpg);}
+#wrap.night { color: white; background-image:url(../img/bg_night.jpg);}
+
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -11480,7 +11486,6 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(256, 256, 256, 0.5) 0%, rgba(256, 256, 256, 0.5) 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11617,7 +11622,6 @@ figure {
   left:50%; 
   font-size:60px; 
   font-weight:bold; 
-  color:#333; 
   transition:all 3s;
 }
 

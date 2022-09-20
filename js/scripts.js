@@ -129,8 +129,26 @@ $(document).ready(function(){
 		$("p span").eq(2).text(sNum);		
 		
 	},1000)  //1초의 시간마다 안쪽의 구문을 반복 실행
+
+    var now = new Date();
+    var hr = now.getHours();
   
+    /* 시간에 따라 화면 테마 변경 */
+    if(hr>=5 && hr<11){   //현재 시간이 5시 보다는 같거나 크고, 11시 보다는 작을때
+         $("#wrap").removeClass();
+         $("#wrap").addClass("morning");
+     }else if(hr>=11 && hr<16){   //현재 시간이 11시 보다는 같거나  크고, 16시 보다는 작을때
+         $("#wrap").removeClass();
+         $("#wrap").addClass("afternoon");
+     }else if(hr>=16 && hr<20){   //현재 시간이 16시 보다는 같거나 크고, 20시 보다는 작을때
+         $("#wrap").removeClass();
+         $("#wrap").addClass("evening");
+     }else if(hr>=20 && hr<25){   //현재 시간이 20시 보다는 같거나 크고, 25시 보다는 작을때
+         $("#wrap").removeClass();
+         $("#wrap").addClass("night");
+     };
 });
+
 // 스크롤 높이 확인
 $(window).on("scroll",function(){
     var sc_top=$(this).scrollTop();
@@ -140,7 +158,7 @@ $(window).on("scroll",function(){
     console.log($(this).scrollTop());
 })
 
-//스크롤 이동
+//스크롤 높이에 따른 이벤트 발생
 $(document).ready(function(){
     $(window).scroll(function(){
 
