@@ -134,7 +134,7 @@ $(document).ready(function(){
     var hr = now.getHours();
   
     /* 시간에 따라 화면 테마 변경 */
-    if(hr>=5 && hr<11){   //현재 시간이 5시 보다는 같거나 크고, 11시 보다는 작을때
+    if(hr>=0 && hr<11){   //현재 시간이 0시 보다는 같거나 크고, 11시 보다는 작을때
          $("#wrap").removeClass();
          $("#wrap").addClass("morning");
      }else if(hr>=11 && hr<16){   //현재 시간이 11시 보다는 같거나  크고, 16시 보다는 작을때
@@ -143,7 +143,7 @@ $(document).ready(function(){
      }else if(hr>=16 && hr<20){   //현재 시간이 16시 보다는 같거나 크고, 20시 보다는 작을때
          $("#wrap").removeClass();
          $("#wrap").addClass("evening");
-     }else if(hr>=20 && hr<25){   //현재 시간이 20시 보다는 같거나 크고, 25시 보다는 작을때
+     }else if(hr>=20 && hr<0){   //현재 시간이 20시 보다는 같거나 크고, 24시 보다는 작을때
          $("#wrap").removeClass();
          $("#wrap").addClass("night");
      };
