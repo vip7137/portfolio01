@@ -143,7 +143,7 @@ $(document).ready(function(){
      }else if(hr>=16 && hr<20){   //현재 시간이 16시 보다는 같거나 크고, 20시 보다는 작을때
          $("#wrap").removeClass();
          $("#wrap").addClass("evening");
-     }else if(hr>=20 && hr<24){   //현재 시간이 20시 보다는 같거나 크고, 24시 보다는 작을때
+     }else if(hr>=20 && hr<25){   //현재 시간이 20시 보다는 같거나 크고, 24시 보다는 작을때
          $("#wrap").removeClass();
          $("#wrap").addClass("night");
      };
