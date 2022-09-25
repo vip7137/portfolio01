@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- 구글 폰트 -------------------------------------------------------------------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Secular+One&display=swap" rel="stylesheet">
+    <!-- 구글 아이콘 폰트 -------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- bootstrap  링크 -------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <style>
+        /*전체 글자의 폰트 및 박스 설정*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            width: 460px;
+        }
+
+        * {box-sizing: border-box;}
+
+        input label{
+            margin-right: 25px;
+        }
+
+        /* vertical-align:-1px; */
+        .check{width:13px;height:13px;vertical-align:text-top}
+
+        /*전체 화면의 여백 조절*/
+        .wrapper{
+            min-width: 290px;
+            min-height: 505px;
+            padding: 0 4.35%;
+            text-align: left;
+        }
+
+        /*화면 맨 위의 로고 위치 조절*/
+        .member_logo{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+
+        /*로고 이미지 크기 설정*/
+        img {
+            width: 195px;
+            height: 46px;
+            object-fit: cover;
+        }
+
+        /*회원 가입 글자 스타일 설정*/
+        .section-title{
+            padding: 20px 0 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.29;
+            letter-spacing: normal;
+            color: #111;
+        }
+
+        /*아이콘과 정보 기입란 조절*/
+        .input-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        /*회원가입란 아이콘 스타일 설정*/
+        .icon {
+            padding: 10px;
+            background: dodgerblue;
+            color: white;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        /*화살표 아이콘 스타일 설정*/
+        .material-symbols-outlined{
+            box-sizing: border-box;
+            
+        }
+
+        /*내용 간격 설정*/
+        .input-field {
+            width: 700px;
+            padding: 10px;
+            outline: none;
+        }
+
+        /* 맨 처음 체크박스 아래 내용 */
+        .checkall-first-message{
+            box-sizing: border-box;
+            display: block;
+            margin-top: 6px;
+            margin-left: 26px;
+            font-family: sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .checkbox_in text{
+            margin-right: 25px;
+            display: block;
+            line-height: 1.5;
+        }
+
+        /* 체크박스 스타일 설정  */
+        .box1{
+            margin-top: 16px;
+            padding: 18px 16px;
+            border: 1px solid #ccc;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /*버튼의 스타일 및 반응할때의 스타일 설정*/
+        .btn {
+            background-color: dodgerblue;
+            color: white;
+            padding: 15px 20px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
+        /*맨 아래 글자 설정*/
+        footer{
+            padding: 20px 0 40px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        /* 모달창 설정 */
+        .modal{ 
+        position:absolute; 
+        width:100%; 
+        height:100%; 
+        background: rgba(0,0,0,0.8); 
+        top:0; 
+        left:0; 
+        display:none;
+        z-index: 10px;
+        }
+
+        .modal_content{
+        width:400px; 
+        height:200px;
+        background:#fff; 
+        border-radius:10px;
+        position:relative; 
+        top:50%; 
+        left:50%;
+        margin-top:-100px; 
+        margin-left:-200px;
+        text-align:center;
+        box-sizing:border-box; 
+        padding:74px 0;
+        line-height:23px; 
+        cursor:pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <h1 class="member_logo"><a href="https://www.coupang.com/"><img src="img/logo-coupang.png"></a></h1>
+        </header>
+
+        <!-- 회원정보 가입하는 곳 --------------------------------------------------------------------->
+        <form action="login" name="login">
+
+            <div class="section-title">회원정보를 입력해주세요 </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="아이디(이메일)" id="email" name="email">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="비밀번호" id="pw" name="pw">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="비밀번호 확인" name="pw2">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="이름" name="name">
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <input class="input-field" type="text" placeholder="휴대폰 번호" id="phone" name="phone">
+            </div>
+
+        </form>
+            <!-- 회원정보 가입하는 곳 -->
+
+            <!-- 동의하는 곳 --------------------------------------------------------------------->
+
+            <form>
+                    <input type="checkbox" id="vehicle1" class="check-all" name="vehicle1" value="모두 확인하였으며 동의합니다.">
+                    <label for="vehicle1">모두 확인하였으며 동의합니다.</label><br>
+                    <span class="checkall-first-message">동의에는 필수 및 선택 목적(광고성 정보 수신 포함)에 대한 동의가 포함되어 있으며, 선택 목적의 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.</span>
+
+                <div class="box1">
+                    <input type="checkbox" id="vehicle2" class="vehicle" name="vehicle2" value="만 14세 이상입니다">
+                    <label for="vehicle2">[필수] 만 14세 이상입니다</label><br>
+                    <input type="checkbox" id="vehicle3" class="vehicle" name="essential(2)">
+                        <label for="vehicle3">[필수] 쿠팡 이용약관 동의</label>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
+                        </button><br>
+
+                        <!-- 쿠팡 이용약관 동의 모달창 내용 --------------------------------------------------------------------->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">쿠팡 이용약관 동의</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                    
+                                    <div class="modal-body">
+                                        [ 쿠팡 이용 약관 ]
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 모달창 내용 --------------------------------------------------------------------->
+
+                        <input type="checkbox" id="vehicle4" class="vehicle" name="essential(3)">
+                            <label for="vehicle4">[필수] 전자금융거래 이용약관 동의</label><br>
+                            
+
+                        <input type="checkbox" id="vehicle5" class="vehicle" name="essential(4)">
+                        <label for="vehicle5">[필수] 개인정보 수집 및 이용 동의</label><br>
+                        <input type="checkbox" id="vehicle6" class="vehicle" name="essential(5)">
+                        <label for="vehicle6">[필수] 개인정보 제3자 제공 동의</label><br>
+                        <input type="checkbox" id="vehicle7" class="vehicle" name="Select(1)">
+                        <label for="vehicle7">[선택] 마케팅 목적의 개인정보 수집 및 이용 동의</label><br>
+                        <input type="checkbox" id="vehicle8" class="vehicle" name="chk">
+                        <label for="vehicle8">[선택] 광고성 정보 수신 동의</label><br>
+                        <ul>
+                            <input type="checkbox" id="vehicle9" class="vehicle" name="chk">
+                            <label for="vehicle9">[선택] 이메일 수신 동의</label><br>
+                            <input type="checkbox" id="vehicle10" class="vehicle" name="chk">
+                            <label for="vehicle10">[선택] SMS, SNS 수신 동의</label><br>
+                            <input type="checkbox" id="vehicle11" class="vehicle" name="chk">
+                            <label for="vehicle11">[선택] 앱 푸시 수신 동의</label><br>
+                        </ul>
+                </div>
+            </form>
+
+            <!-- 동의하는 곳 -->
+
+
+
+            <input type="button" class="btn" value="동의하고 가입하기" onclick="checkfield()"></input>
+
+            <footer>
+                ©Coupang Corp. All rights reserved.
+            </footer>
+    </div>
+
+    <script>
+
+        // 모달창 구동 부분
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+
+        function checkfield(){
+        
+        //이메일 정규식
+        var remail = /^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+
+        // 비밀번호 정규식
+        var repw = /^(?!((?:[0-9]+)|(?:[a-zA-Z]+)|(?:[\[\]\^\$\.\|\?\*\+\(\)\\~`\!@#%&\-_+={}'""<>:;,\n]+))$)(.){8,20}$/;
+
+        //핸드폰 정규식
+        var regPhone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+
+        let email = document.getElementById("email").value;
+        let pw = document.getElementById("pw").value;
+        let phone = document.getElementById("phone").value;
+
+        if(document.login.email.value==""){ //id값이 없을 경우
+            alert("이메일을 입력하세요");       //메세지 경고창을 띄운 후
+            document.login.email.focus();       // id 텍스트박스에 커서를 위치
+            return;
+
+        }else if(!document.login.email.value==remail.test(email)){
+            alert("이메일을 올바르게 입력해주세요.");
+            document.login.email.focus();
+            return;
+
+        }else if(document.login.pw.value==""){
+            alert("영문/숫자/특수문자 2가지 이상 조합 (8~20자)");
+            document.login.pw.focus();
+            return;
+
+        }else if(!document.login.email.value==repw.test(pw)){
+            alert("영문/숫자/특수문자 2가지 이상 조합 (8~20자)");
+            document.login.pw.focus();
+            return;
+
+        }else if(email === pw){
+            alert("아이디(이메일) 제외");
+            document.login.pw.focus();
+            return
+
+        }else if(document.login.pw2.value==""){
+            alert("확인을 위해 새 비밀번호를 다시 입력해주세요.");
+            document.login.pw2.focus();
+            return;
+
+        }else if(document.login.pw.value!=document.login.pw2.value){
+            alert("새 비밀번호가 일치하지 않습니다.");
+            document.login.pw2.focus();
+            return;
+            
+        }else if(document.login.name.value==""){
+            alert("이름을 정확히 입력하세요");
+            document.login.name.focus();
+            return;
+            
+        }else if(document.login.phone.value==""){
+            alert("휴대폰 번호를 입력하세요.");
+            document.login.phone.focus();
+            return;
+
+        }else if(!document.login.phone.value==regPhone.test(phone)){
+            alert("휴대폰 번호를 정확하게 입력하세요.");
+            document.login.phone.focus();
+            return;
+        
+        }
+        // else if(document.login.vehicle1.넣을내용!=){}
+        //     alert("필수 항목에 모두 동의해주세요");
+        //     document.login.vehicle1.focus();
+        //     return;
+        
+    }
+
+        // 체크박스 전부 선택하기
+        $( document ).ready( function() {
+            $( '.check-all' ).click( function() {
+                $( '.vehicle' ).prop( 'checked', this.checked );
+            });
+
+            // [선택] 마케팅 목적의 개인정보 수집 및 이용 동의
+            $("#vehicle7").click(function() {
+                if($("#vehicle7").is(":checked")) $("input[name=chk]").prop("checked", true);
+                else $("input[name=chk]").prop("checked", false);
+            });
+                
+            $("input[name=chk]").click(function() {
+                var total = $("input[name=chk]").length;
+                var checked = $("input[name=chk]:checked").length;
+
+                if(total != checked) $("#vehicle7").prop("checked", false);
+                else $("#vehicle7").prop("checked", true); 
+            });
+
+            // [선택] 광고성 정보 수신 동의의 부분적 선택하기
+            $("#vehicle8").click(function() {
+                if($("#vehicle8").is(":checked")) $("input[name=chk]").prop("checked", true);
+                else $("input[name=chk]").prop("checked", false);
+            });
+                
+            $("input[name=chk]").click(function() {
+                var total = $("input[name=chk]").length;
+                var checked = $("input[name=chk]:checked").length;
+                
+                if(total != checked) $("#vehicle8").prop("checked", false);
+                else $("#vehicle8").prop("checked", true); 
+            });
+
+            // [선택] 이메일 수신동의 클릭시 위의 [선택] 광고성 정보 수신 클릭하기
+            $( '#vehicle9' ).click( function() {
+                $( '#vehicle8' ).prop( 'checked', this.checked );
+            });
+
+            $( '#vehicle10' ).click( function() {
+                $( '#vehicle8' ).prop( 'checked', this.checked );
+            });
+
+
+            $( '#vehicle11' ).click( function() {
+                $( '#vehicle8' ).prop( 'checked', this.checked );
+            });
+
+            // [필수] 쿠팡 이용약관 동의 모달창
+            $(function(){ 
+
+                $("button").click(function(){
+                $(".modal").fadeIn();
+                });
+
+                $(".modal_content").click(function(){
+                $(".modal").fadeOut();
+                });
+
+                });
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
