@@ -108,7 +108,7 @@
 /*첫번째 화면 배경 색과 이미지*/
 #content1{
     background-color:black;
-    background-image: url("img/apple-pic01.png");
+    background-image: url("/img/apple-pic01.png");
 }
 
 /*글자 위치 조절*/
@@ -132,7 +132,7 @@
 /*2번째 화면 배경 색과 이미지*/
 #content2{
     background-color: #FBFBFD;
-    background-image: url("img/apple-pic03.png");
+    background-image: url("/img/apple-pic03.png");
 }
 
 /*2번째 메인 글자 색상*/
@@ -143,7 +143,7 @@
 /*3번째 화면 배경 색과 이미지*/
 #content3{
     background-color: #FBFBFD;
-    background-image: url("img/apple-pic05.png");
+    background-image: url("/img/apple-pic05.png");
 }
 
 /*밝은 배경의 글자 색상*/
@@ -176,13 +176,13 @@
 /*  Airpods Pro 화면 배경 색과 이미지  */
 #content4 :nth-child(1) .container{
     background-color:black;
-    background-image: url("img/apple-pic07.png");
+    background-image: url("/img/apple-pic07.png");
 }
 
 /*  Apple Watch 화면 배경 색과 이미지*/
 #content4 :nth-child(2) .container{
     background-color:black;
-    background-image: url("img/apple-pic09.png");
+    background-image: url("/img/apple-pic09.png");
 }
 
 /*  Apple Watch & Apple WATCH 2개의 화면 h6 색상*/
@@ -194,13 +194,13 @@
 /*  Apple WATCH 화면 배경 색과 이미지*/
 #content4 :nth-child(3) .container{
     background-color:#FBFBFD;
-    background-image: url("img/apple-pic11.png");
+    background-image: url("/img/apple-pic11.png");
 }
 
 /*  Fitness+ 화면 배경 색과 이미지*/
 #content4 :nth-child(4) .container{
     background-color:#FBFBFD;
-    background-image: url("img/apple-pic13.png");
+    background-image: url("/img/apple-pic13.png");
 }
 
 #content5 .slider {
@@ -404,7 +404,7 @@ div > #footer1-1{
     /*  ipone14 pro  */
     #content1{
         height: 540px;
-        background-image: url("img/apple-pic02.png");
+        background-image: url("/img/apple-pic02.png");
     }
     .caption h2{
         font-size: 35px;
@@ -413,33 +413,33 @@ div > #footer1-1{
     /*  ipone14  */
     #content2{
         height: 540px;
-        background-image: url("img/apple-pic04.png");
+        background-image: url("/img/apple-pic04.png");
     }
 
     /*  WATCH  */
     #content3{
         height: 540px;
-        background-image: url("img/apple-pic06.png");
+        background-image: url("/img/apple-pic06.png");
     }
 
     /*  Airpods Pro  */
     #content4 .col-md-6:nth-child(1) .container{
-        background-image: url("img/apple-pic08.png");
+        background-image: url("/img/apple-pic08.png");
     }
 
     /*  Apple Watch  */
     #content4 .col-md-6:nth-child(2) .container{
-        background-image: url("img/apple-pic10.png");
+        background-image: url("/img/apple-pic10.png");
     }
 
     /*  Apple WATCH  */
     #content4 .col-md-6:nth-child(3) .container{
-        background-image: url("img/apple-pic12.png");
+        background-image: url("/img/apple-pic12.png");
     }
 
     /*  Apple Fitness+  */
     #content4 .col-md-6:nth-child(4) .container{
-        background-image: url("img/apple-pic14.png");
+        background-image: url("/img/apple-pic14.png");
     }
 
     /****************************** 슬라이드 설정  ******************************/
