@@ -1,0 +1,486 @@
+/* 네이게이션 바 전체 길이 및 색상 설정 */
+#gnb, #gnb2{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+/* PC버젼 네이게이션 바 길이 및 스타일 설정 */
+/* #gnb ul, #gnb2 ul{
+    height: 50px;
+    width: 100% !important;
+    left: 300px !important;
+    max-width: 1150px !important;;
+} */
+
+/********************************************** PC버젼 네이게이션 바 길이 및 스타일 설정 *************************************************/
+#gnb ul{
+    background-color: black !important;
+    width: 70% !important;  
+    height: 50px;           
+    margin:auto;
+}  
+
+/********************************************** PC버젼 네이게이션 바 글자 밑줄 제거 *************************************************/
+#gnb ul li{        /* , #gnb2 ul li */
+    list-style-type: none;
+    float: left;
+    text-align: center;
+}
+
+/********************************************** PC버젼 네이게이션 바 스타일 설정 *************************************************/
+#gnb ul li a{
+    text-decoration: none;
+    line-height:15px;
+    text-align: center;
+}
+
+#gnb {
+    display: block;
+}
+
+#gnb ul{
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+#gnb2 {
+    display: none;
+}
+
+#gnb ul li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+/********************************************** PC버젼 네이게이션 바 스타일 설정 *************************************************/
+
+/********************************************** 모바일 네비게이션 바 안 서브메뉴 스타일 설정 *************************************************/
+#gnb2-list{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    display: none;
+}
+
+#gnb2-list ul li{
+    list-style-type: none;
+}
+
+#gnb2-list ul li a{
+    text-decoration: none;
+}
+/********************************************** 모바일 네비게이션 바 안 서브메뉴 스타일 설정 *************************************************/
+
+#content1, #content2, #content3, #content4 .container{
+    height: 730px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 네비게이션 바 번호 */
+.bar1, .bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 5.5px) rotate(-45deg);
+}
+
+.change .bar2 {
+    transform: translate(0, -5.5px) rotate(45deg);
+}
+
+/*첫번째 화면 배경 색과 이미지*/
+#content1{
+    background-color:black;
+    background-image: url("/img/apple-pic01.png");
+}
+
+/*글자 위치 조절*/
+.caption{    
+    position: absolute;
+    top: 50px;
+    left: 25%;     /*가로의 절반에 절반 여백 설정*/
+    width: 50%;    /*전체 가로의 절반*/
+}
+
+/*첫번째 메인 글자 색상*/
+#content1 h2, #content1 h3, #content4 .col-md-6:nth-child(1) h2, #content4 .col-md-6:nth-child(1) h3, #content4 .col-md-6:nth-child(2) h2, #content4 .col-md-6:nth-child(2) h3{
+    color: white;
+}
+
+/* 첫번째 메인 글자 크기 조절*/
+.caption h2{
+    font-size: 55px;
+}
+
+/*2번째 화면 배경 색과 이미지*/
+#content2{
+    background-color: #FBFBFD;
+    background-image: url("/img/apple-pic03.png");
+}
+
+/*2번째 메인 글자 색상*/
+#content2 .caption h2, #content2 .caption h3{
+    color: black;
+}
+
+/*3번째 화면 배경 색과 이미지*/
+#content3{
+    background-color: #FBFBFD;
+    background-image: url("/img/apple-pic05.png");
+}
+
+/*밝은 배경의 글자 색상*/
+#content3 .caption h2 #content4 .col-md-6:nth-child(3) h2, #content4 .col-md-6:nth-child(3) h3,  #content4 .col-md-6:nth-child(4) h2, #content4 .col-md-6:nth-child(4) h3{
+    color: black;
+}
+
+/* Apple WATCH 와 Fitness+ 글자 크기 조절 */
+#content4 .col-md-6:nth-child(3) h2, #content4 .col-md-6:nth-child(3) h3, #content4 .col-md-6:nth-child(4) h2, #content4 .col-md-6:nth-child(4) h3{
+    font-size: 25px;
+}
+
+#content3 .caption h3{
+    color: #FD6A13;
+}
+
+.col-md-6{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+}
+
+/*  Airpods Pro 화면부터 높이 설정  */
+.box-height{
+    height: 580px !important;
+    width: auto;
+    margin: 10px;
+}
+
+/*  Airpods Pro 화면 배경 색과 이미지  */
+#content4 :nth-child(1) .container{
+    background-color:black;
+    background-image: url("/img/apple-pic07.png");
+}
+
+/*  Apple Watch 화면 배경 색과 이미지*/
+#content4 :nth-child(2) .container{
+    background-color:black;
+    background-image: url("/img/apple-pic09.png");
+}
+
+/*  Apple Watch & Apple WATCH 2개의 화면 h6 색상*/
+#content4 .container .caption h6{
+    color: #CC2127;
+    font-size: 15px;
+}
+
+/*  Apple WATCH 화면 배경 색과 이미지*/
+#content4 :nth-child(3) .container{
+    background-color:#FBFBFD;
+    background-image: url("/img/apple-pic11.png");
+}
+
+/*  Fitness+ 화면 배경 색과 이미지*/
+#content4 :nth-child(4) .container{
+    background-color:#FBFBFD;
+    background-image: url("/img/apple-pic13.png");
+}
+
+#content5 .slider {
+    min-width: 100%;
+    background-size: cover;
+} 
+
+#content5-1 .slider {
+    min-width: 100%;
+    background-size: cover;
+} 
+
+/**************************** 슬라이드 이미지 설정 *******************************/
+.img {
+    padding: 0px; 
+    padding-right: 0px;
+    display: block;
+}
+
+/* .img001 > img{
+    display: none;
+} */
+
+/* 슬라이드 이미지 크기 조절 */
+.slick-slide{
+    height: 700px !important; 
+}
+
+.slick-list{
+    width: 100%;
+    min-height: 100% !important;
+}
+
+/* 슬라이드 이미지 왼쪽으로 이동 */
+.slick-prev{
+    width: 35%;
+    height: 100%; 
+    left: 0px;
+    z-index: 10;
+    opacity: 0;
+}
+
+/* 슬라이드 이미지 오른쪽으로 이동 */
+.slick-next{
+    width: 35%;
+    height: 100%; 
+    right: 0px;
+    opacity: 0;
+}
+
+/* 박스 간의 영역 조절(Airpods Pro &  WATCH 영역 2개만 적용) */
+#box1, #box3{
+    margin-right: 2px;
+}
+
+/* 상품 모음과 이미지 슬라이드 창과의 여백 설정 */
+#content5 .slider{
+    margin-top: 20px;
+}
+
+#content5-1 .slider{
+    margin-top: 20px;
+}
+
+#content5{
+    display: block;
+}
+
+#content5-1{
+    display: none;
+}
+
+/* #footer1의 배경 색상 */
+#footer1{
+    background-color:#fcfdfb;
+}
+#cet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#cet2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* footer 마지막 부분 내용 스타일 */
+.footer-column{
+    width:20%;
+    float: left;
+}
+
+.footer-column ul{
+    list-style-type: none;
+}
+
+.footer-column li{
+    font-size: 12px;
+}
+
+/* footer 첫 글자 폰트 설정 */
+#footer-text {
+    font-weight: bold;
+}
+
+/* footer 글자위의 여백 설정*/
+div > #footer1-1{
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+#footer1-2{
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#store_text span{
+    color: blue;
+}
+
+/* 맨 끝 부분 글자 수정 */
+#bottom a{
+    margin-left: 13px;
+    padding-right: 10px;
+    border-right: solid 1px;
+    font-size: 13px;
+}
+
+/* footer 모습 보이기 및 가리기 설정 */
+#footer1{
+    display: block;
+}
+
+#footer2{
+    display: none;
+}
+
+/* footer 버튼 설정 */
+#footer2 button{
+    display: block;
+    border: none;
+}
+
+#footer2 li{
+    list-style-type: none;
+}
+
+
+/*----  화면 크기가 바뀔때 정해진 이미지로 변경  ------------------------------------------------------------------------*/
+@media screen and (max-width:576px) {
+    /* 메뉴 네이비게이션 바 */
+    #gnb {
+    display: none;
+    }
+
+    #gnb2{
+        display: block;
+        width:  100%;
+        height: 50px;
+    }
+    #gnb2 ul{
+        width: 100% !important;
+        height: 50px;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    #gnb2 ul li{    
+        text-align: center !important;
+        list-style-type: none;
+        float: left;
+    }
+    #gnb2 ul li a{
+        margin-top: 10px;
+        height: 100%;
+        display: inline-block !important;   
+        color: white;            
+    }
+    #gnb2 ul li:nth-child(1){
+        /* background-color:blue; */
+        width:15%;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+    #gnb2 ul li:nth-child(2){
+        width: 70%;
+        text-align: center;
+        /* background-color: red;    */
+        box-sizing: border-box !important;     
+    }
+    #gnb2 ul li:nth-child(3){
+        width:15%;
+        /* background-color: green; */
+        box-sizing: border-box !important;
+        
+    }
+
+    /*  ipone14 pro  */
+    #content1{
+        height: 540px;
+        background-image: url("/img/apple-pic02.png");
+    }
+    .caption h2{
+        font-size: 35px;
+    }
+
+    /*  ipone14  */
+    #content2{
+        height: 540px;
+        background-image: url("/img/apple-pic04.png");
+    }
+
+    /*  WATCH  */
+    #content3{
+        height: 540px;
+        background-image: url("/img/apple-pic06.png");
+    }
+
+    /*  Airpods Pro  */
+    #content4 .col-md-6:nth-child(1) .container{
+        background-image: url("/img/apple-pic08.png");
+    }
+
+    /*  Apple Watch  */
+    #content4 .col-md-6:nth-child(2) .container{
+        background-image: url("/img/apple-pic10.png");
+    }
+
+    /*  Apple WATCH  */
+    #content4 .col-md-6:nth-child(3) .container{
+        background-image: url("/img/apple-pic12.png");
+    }
+
+    /*  Apple Fitness+  */
+    #content4 .col-md-6:nth-child(4) .container{
+        background-image: url("/img/apple-pic14.png");
+    }
+
+    /****************************** 슬라이드 설정  ******************************/
+    /* 슬라이드 이미지 */
+    #content5{
+        display: none;
+    }
+
+    #content5-1{
+        display: block;
+    }
+
+    /* 슬라이드 이미지 크기 설정 */
+    .container-fluid{
+        box-sizing: border-box;
+    }
+
+    .container-fluid img{
+        height: 100%;
+        background-size: cover;
+        margin:auto;
+    }
+
+    .container-fluid .slick-list{
+        min-width: 100%;
+        height: 700px;
+    }
+
+    .container-fluid button {
+        min-width: 30%;
+        height: 700px;
+    }
+
+    /* footer 모습 보이기 설정*/
+    #footer1{
+        display: none;
+    }
+
+    #footer2{
+        display: block;
+    }
+    
+}
+/*----  화면 크기가 바뀔때 정해진 이미지로 변경  ------------------------------------------------------------------------*/

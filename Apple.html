@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <!-- fontawesom ---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    
+    <!-- bootstrap CSS ------------------------------------------------------------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library ------------------------------------------------>  <!--안돌아가면 버젼의 문제일수도 있다.-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    <!-- Popper JS ---------------------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick --------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- 애플 데모파일 CSS --------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="css/apple.css">
+
+    <!-- 애플 데모파일 JS --------------------------------------------------------------------------------------------------->
+    <script src="js/apple.js"></script>
+</head>
+<body>
+        <!-- Global Navigation Bar ------------------------------------------------------->
+        <div id="gnb" class="container-fluid">
+            <ul>
+                <li><a href="#"><i class="fa fa-apple"></i></a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">TV &amp; Home</a></li>
+                <li><a href="#">Only on Apple</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#"><i class="fa fa-search"></a></i></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></a></i></li>
+            </ul>
+        </div>
+        <!-- Global Navigation Bar ------------------------------------------------------->
+        <!-- GNB Moblie------------------------------------------------------------------->
+        <div id="gnb2" class="container-fluid">
+            <ul>
+                <li><a href="#" id="bar01">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                    </div>
+                </a></li>
+                <li><a href="#" id="bar02"><i class="fa fa-apple"></i></a></li>            
+                <li><a href="#" id="bar03"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>        
+        </div>
+        <div id="gnb2-list">
+            <ul>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+            </ul>
+        </div>
+        <!-- GNB Moblie------------------------------------------------------------------->
+
+        <!-- ipone14 pro ------------------------------------------------------>
+        <div id="content1" class="container-fluid">
+            <div class="container">
+                <div class="caption">
+                    <h2>iPhone14 Pro</h2>
+                    <h3>Pro. Beyond.</h3>
+                    <div>
+                        <a href="#">Learn more &gt;</a>
+                        <a href="#">Buy &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ipone14 pro -->
+
+        <!-- ipone14 ------------------------------------------------------>
+        <div id="content2" class="container-fluid">
+            <div class="container">
+                <div class="caption">
+                    <h2>iPhone14</h2>
+                    <h3>Big and bigger.</h3>
+                    <p>iPhone 14 Plus available startion 10.7</p>
+                    <div>
+                        <a href="#">Learn more &gt;</a>
+                        <a href="#">Buy &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ipone14 -->
+
+        <!-- WATCH ------------------------------------------------------>
+        <div id="content3" class="container-fluid">
+            <div class="container">
+                <div class="caption">
+                    <h2>WATCH</h2>
+                    <h3>ULTRA</h3>
+                    <p>Adventure awaits.</p>
+                    <div>
+                        <a href="#">Learn more &gt;</a>
+                        <a href="#">Buy &gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ipone14 -->
+
+        <!-- double box1 ------------------------------------------------------>
+            <div id="content4" class="container-fluid" >
+                    <div id="cet">
+                    <!-- Airpods Pro ------------------------------------------>
+                        <!-- <div class="col-md-6"> -->
+                            <div id="box1" class="container box-height" style="width: 45%;">
+                                <div class="caption">
+                                    <h2>Airpods Pro</h2>
+                                    <h3>Rebuilt from the sound up.</h3>
+                                    <div>
+                                        <a href="#">Learn more &gt;</a>
+                                        <a href="#">Buy &gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- Airpods Pro -->
+
+                        <!-- Apple Watch ------------------------------------------>
+                        <!-- <div class="col-md-6"> -->
+                            <div id="box2" class="container box-height"  style="width: 45%;">
+                                <div class="caption">
+                                    <h2><i class="fa fa-apple"></i> Watch</h2>
+                                    <h6>SERIES 8</h6>
+                                    <h3>A healthy leap ahead.</h3>
+                                    <div>
+                                        <a href="#">Learn more &gt;</a>
+                                        <a href="#">Buy &gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <!-- Apple Watch -->
+                    <div id="cet2">
+                    <!-- Apple WATCH ------------------------------------------>
+                        <!-- <div class="col-md-6"> -->
+                            <div id="box3" class="container box-height" style="width: 45%;">
+                                <div class="caption">
+                                    <h2><i class="fa fa-apple"></i> WATCH</h2>
+                                    <h6>SE</h6>
+                                    <h3>A great deal to love.</h3>
+                                    <div>
+                                        <a href="#">Learn more &gt;</a>
+                                        <a href="#">Buy &gt;</a>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- Apple Watch -->
+
+                        <!-- Apple Watch ------------------------------------------>
+                        <!-- <div class="col-md-6"> -->
+                            <div id="box4" class="container box-height" style="width: 45%;">
+                                <div class="caption">
+                                    <h2><i class="fa fa-apple"></i> Fitness+</h2>
+                                    <h3>A healthy leap ahead.</h3>
+                                    <div>
+                                        <a href="#">Learn more &gt;</a>
+                                        <a href="#">Buy &gt;</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <!-- Apple Watch -->
+                </div>
+            </div>
+        <!-- double box1 -->
+
+        <!---- appleTV carousel ----------------------------------------------------------->
+        <div id="content5" class="container-fluid">
+            <div class="slider">
+                <div class="img"><img src="img/apple-img01.jpg"></div>
+                <div class="img"><img src="img/apple-img02.jpg"></div>
+                <div class="img"><img src="img/apple-img03.jpg"></div>
+                <div class="img"><img src="img/apple-img04.jpg"></div>
+                <div class="img"><img src="img/apple-img05.jpg"></div>
+                <div class="img"><img src="img/apple-img06.jpg"></div>
+                <div class="img"><img src="img/apple-img07.jpg"></div>
+                <div class="img"><img src="img/apple-img08.jpg"></div>
+                <div class="img"><img src="img/apple-img09.jpg"></div>
+                <div class="img"><img src="img/apple-img10.jpg"></div>
+            </div>
+        </div>
+        <!-- appleTV carousel -->
+
+        <!---- mobile appleTV carousel ---------------------------------------------->
+        <div id="content5-1" class="container-fluid">
+            <div class="slider">
+                <div class="img001"><img src="img/apple-img01-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img02-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img03-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img04-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img05-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img06-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img07-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img08-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img09-1.jpg" class="mobile-img"></div>
+                <div class="img001"><img src="img/apple-img10-1.jpg" class="mobile-img"></div>
+            </div>
+        </div>
+        <!-- appleTV carousel -->
+
+        <!-- footer ---------------------------------------------------------------------->
+        <div id="footer1" class="container-fluid">
+            <div class="container">
+                <div id="footer1-1">
+                    1. iPhone 8 or later users may subscribe without an Apple Watch later this fall.
+                    <br>
+                    2. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive a discount equal to the value of the Apple Gift Card off the price of the eligible Mac or iPad, but will be charged for all items in their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card Monthly Installment (ACMI) purchases with this promotion: Qualified Purchasers selecting ACMI (a 0% APR payment option) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of the eligible Mac or iPad. This will result in one ACMI installment plan over 12 months for the eligible iPad or Mac discounted by the instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off the eligible Mac or iPad. ACMI is subject to credit approval and credit limit. Variable APRs for Apple Card other than ACMI range from 13.24% to 24.24% based on creditworthiness. Rates as of August 1, 2022. If you choose the pay-in-full or one-time-payment option for an ACMI-eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI transactions and are subject to your standard purchase APR. See the Apple Card Customer Agreement at https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan or business loyalty pricing. Availability of in-store promotion offerings may be limited by Apple Store location closures as a result of COVID-19. Additional restrictions apply. View full terms and conditions of offer here.
+                    iPhone 14 Plus is subject to FCC rules as well as consumer protection, contractual, and other provisions of federal or state law. It cannot be sold or delivered until the FCC’s authorization process is complete.
+                    A subscription is required for Apple Fitness+.
+                    Apple Fitness+ requires iOS 14.3 or later, iPadOS 14.3 or later, watchOS 7.2 or later, and tvOS 14.3 or later.
+                    To get the newest features, make sure your devices are running the latest software version.
+                    To access and use all the features of Apple Card, you must add Apple Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings > General > Software Update. Tap Download and Install.
+                    Available for qualifying applicants in the United States.
+                    Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                    Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.
+                </div>
+
+
+                    <hr style="border: 1px solid gray;">
+
+                    <div id="footer1-2" class="footer-column">
+                        <ul>
+                            <li id="footer-text">Shop and Learn</li>
+                            <li>Store</li>
+                            <li>Mac</li>
+                            <li>iPad</li>
+                            <li>iPhone</li>
+                            <li>Watch</li>
+                            <li>AirPods</li>
+                            <li>TV & Home</li>
+                            <li>AirTag</li>
+                            <li>Accessories</li>
+                            <li>Gift Cards</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <ul>
+                            <li id="footer-text">Services</li>
+                            <li>Apple Music</li>
+                            <li>Apple TV+</li>
+                            <li>Apple Fitness+</li>
+                            <li>Apple News+</li>
+                            <li>Apple Arcade</li>
+                            <li>iCloud</li>
+                            <li>Apple One</li>
+                            <li>Apple Card</li>
+                            <li>Apple Books</li>
+                            <li>Apple Podcasts</li>
+                            <li>App Store</li>
+                            <br>
+                            <li id="footer-text">Account</li>
+                            <li>Manage Your Apple ID</li>
+                            <li>Apple Store Account</li>
+                            <li>iCloud.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <ul>
+                            <li id="footer-text">Apple Store</li>
+                            <li>Find a Store</li>
+                            <li>Genius Bar</li>
+                            <li>Today at Apple</li>
+                            <li>Apple Camp</li>
+                            <li>Apple Store App</li>
+                            <li>Refurbished and Clearance</li>
+                            <li>Financing</li>
+                            <li>Apple Trade In</li>
+                            <li>Order Status</li>
+                            <li>Shopping Help</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <ul>
+                            <li id="footer-text">For Business</li>
+                            <li>Apple and Business</li>
+                            <li>Shop for Business</li>
+                            <br>
+                            <li id="footer-text">For Education</li>
+                            <li>Apple and Education</li>
+                            <li>Shop for K-12</li>
+                            <li>Shop for College</li>
+                            <br>
+                            <li id="footer-text">For Healthcare</li>
+                            <li>Apple in Healthcare</li>
+                            <li>Health on Apple Watch</li>
+                            <li>Health Records on iPhone</li>
+                            <br>
+                            <li id="footer-text">For Government</li>
+                            <li>Shop for Government</li>
+                            <li>Shop for Veterans and Military</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <ul>
+                            <li id="footer-text">Apple Values</li>
+                            <li>Accessibility</li>
+                            <li>Education</li>
+                            <li>Environment</li>
+                            <li>Inclusion and Diversity</li>
+                            <li>Privacy</li>
+                            <li>Racial Equity and Justice</li>
+                            <li>Supplier Responsibility</li>
+                            <br>
+                            <li id="footer-text">About Apple</li>
+                            <li>Newsroom</li>
+                            <li>Apple Leadership</li>
+                            <li>Career Opportunities</li>
+                            <li>Investors</li>
+                            <li>Ethics & Compliance</li>
+                            <li>Events</li>
+                            <li>Contact Apple</li>
+                        </ul>
+                    </div>
+                <div id="store_text" style="margin-top: 380px; font-size: 13px; box-sizing: border-box;" >
+                    More ways to shop: <span>Find an Apple Store</span> or <span>other retailer</span> near you. Or call 1-800-MY-APPLE.
+                </div>  
+                <hr style="border: 1px solid gray;"> 
+                <div id="bottom" style="margin-top: 5px; font-size: 13px;">
+                    Copyright © 2022 Apple Inc. All rights reserved.
+                        <a>Privacy Policy </a>
+                        <a>Terms of Use </a>
+                        <a>Sales and Refunds </a>
+                        <a>Legal </a>
+                        <a>Site Map </a>
+                        <span style="margin-left:280px">United States</span> 
+                    </div> 
+            </div>
+        </div>
+        <!-- footer -->
+
+        <!-- footer mobile ---------------------------------------------------------------------------->
+        <div id="footer2" class="container">
+            <button type="button" id="btn1">Shop and learn</button>
+            <ul id="ul1" style="display: none;">
+                <li>Store</li>
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>AirPods</li>
+                <li>TV &amp; Home</li>
+                <li>AirTag</li>
+                <li>Accessories</li>
+                <li>Gift Cards</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn2">Services</button>
+            <ul id="ul2" style="display: none;">
+                <li>Apple Music</li>
+                <li>Apple TV+</li>
+                <li>Apple Finess+</li>
+                <li>Apple News+</li>
+                <li>Apple Arcade</li>
+                <li>iCloud</li>
+                <li>Apple One</li>
+                <li>Apple Card</li>
+                <li>Apple Books</li>
+                <li>App Store</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn3">Account</button>
+            <ul id="ul3" style="display: none;">
+                <li>Manage Your Apple&nbsp;ID</li>
+                <li>Apple Store Account</li>
+                <li>iCloud.com</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn4">Apple Store</button>
+            <ul id="ul4" style="display: none;">
+                <li>Find a Store</li>
+                <li>Genius Bar</li>
+                <li>Today at Apple</li>
+                <li>Apple Camp</li>
+                <li>Apple Store App</li>
+                <li>Refurbished and Clearance</li>
+                <li>Financing</li>
+                <li>Apple&nbsp;Trade&nbsp;In</li>
+                <li>Order Status</li>
+                <li>Shopping Help</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn5">For Business</button>
+            <ul id="ul5" style="display: none;">
+                <li>Apple and Business</li>
+                <li>Shop for Business</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn6">For Education</button>
+            <ul id="ul6" style="display: none;">
+                <li>Apple and Education</li>
+                <li>Shop for K-12</li>
+                <li>Shop for College</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn7">For Healthcare</button>
+            <ul id="ul7" style="display: none;">
+                <li>Apple in Healthcare</li>
+                <li>Health on Apple&nbsp;Watch</li>
+                <li>Health Records on iPhone</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn8">For Government</button>
+            <ul id="ul8" style="display: none;">
+                <li>Shop for Government</li>
+                <li>Shop for Veterans and Military</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn9">Apple Values</button>
+            <ul id="ul9" style="display: none;">
+                <li>Accessibility</li>
+                <li>Education</li>
+                <li>Environment</li>
+                <li>Inclusion and Diversity</li>
+                <li>Privacy</li>
+                <li>Racial Equity and Justice</li>
+                <li>Supplier Responsibility</li>
+            </ul>
+            <hr style="border: 1px solid gray;">
+            <button type="button" id="btn10">About Apple</button>
+            <ul id="ul10" style="display: none;">
+                <li>Newsroom</li>
+                <li>Apple Leadership</li>
+                <li>Career Opportunities</li>
+                <li>Investors</li>
+                <li>Ethics &amp; Compliance</li>
+                <li>Events</li>
+                <li>Contact Apple</li>
+            </ul>
+        </div>
+        <!-- footer mobile -->
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+</body>
+</html>
